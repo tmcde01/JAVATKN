@@ -1,0 +1,16 @@
+        <h1>JAVA Coffee Token Sale</h1>
+        <p>Get your JAVA Tokens today!</p>
+        <h2>Purchase Authorization</h2>
+        Address to allow: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange} />
+        <button type="button" onClick={this.handleKycWhitelisting}>Add to Whitelist</button>
+        <h2>Buy Tokens</h2>
+        <p><b>Cost:  0.001 Ether (About $5)</b></p>
+        <p>No Partial Payments | 10 Token Max | 25 Token Lifetime Max</p>
+        <p>Send Wei to this address: {this.state.tokenSaleAddress}</p>
+        <p>You currently have: {this.state.userTokens} JAVA Tokens</p>
+        <p>The current total supply is: {this.state.inCirculation}</p>
+        <button type="button" onClick={this.handleBuyTokens}>Buy more tokens</button>
+        <p></p>
+        <p></p>
+        <p>Redeem tokens at this address: {MyToken.networks[this.networkId].address}</p>
+      </div>
